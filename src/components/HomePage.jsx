@@ -13,8 +13,7 @@ const HomePage = () => {
   });
 
   const handleCalculate = () => {
-    // Simple example calculation - you can modify the logic as needed
-    const baseRate = 45; // Base success rate
+    const baseRate = 45;
     const successRate = Math.round(baseRate * (1 + (formData.cycles * 0.1)));
     navigate(`/result?rate=${successRate}&cycles=${formData.cycles}`);
   };
@@ -30,7 +29,7 @@ const HomePage = () => {
         </div>
 
         <div className="w-full max-w-3xl mx-auto space-y-6 sm:space-y-8 md:space-y-12">
-          {/* Age Range Section */}
+
           <div className="space-y-3 sm:space-y-4">
             <h2 className="text-lg sm:text-xl md:text-2xl text-white text-center font-light px-2">
               Which age range applies to you?
@@ -53,7 +52,7 @@ const HomePage = () => {
             </div>
           </div>
 
-          {/* IVF Cycles Section */}
+
           <div className="space-y-3 sm:space-y-4">
             <h2 className="text-lg sm:text-xl md:text-2xl text-white text-center font-light px-2">
               Number of IVF Cycles?
@@ -73,7 +72,7 @@ const HomePage = () => {
             </div>
           </div>
 
-          {/* Previous Procedures Section */}
+
           <div className="space-y-4">
             <h2 className="text-2xl text-white text-center font-light">Have you undergone these procedures before?</h2>
             <div className="flex justify-center gap-12">
@@ -116,7 +115,7 @@ const HomePage = () => {
             </div>
           </div>
 
-          {/* Medical Conditions Section */}
+
           <div className="space-y-4">
             <h2 className="text-2xl text-white text-center font-light">Do you have any of these medical conditions?</h2>
             <div className="flex flex-wrap justify-center gap-4">

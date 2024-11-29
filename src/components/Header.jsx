@@ -17,7 +17,6 @@ const Header = () => {
     <header className="bg-white shadow-sm">
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          {/* Logo */}
           <Link to="/" className="flex items-center">
             <img 
               src="https://t3.ftcdn.net/jpg/02/94/50/30/360_F_294503009_Ug7nq7b1HneKgNxANdTwckhojSmP9EcT.webp" 
@@ -26,7 +25,6 @@ const Header = () => {
             />
           </Link>
 
-          {/* Desktop Menu */}
           <nav className="hidden lg:flex items-center space-x-8">
             {menuItems.map((item) => (
               <Link
@@ -42,7 +40,6 @@ const Header = () => {
             </button>
           </nav>
 
-          {/* Hamburger Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="lg:hidden p-2 text-gray-600 hover:text-coral-red"
@@ -65,7 +62,7 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Mobile Menu */}
+
         {isMenuOpen && (
           <nav className="lg:hidden mt-4 pb-4">
             <div className="flex flex-col space-y-4">
