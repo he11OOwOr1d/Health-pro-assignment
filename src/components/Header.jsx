@@ -23,6 +23,7 @@ const Header = () => {
               alt="IVF Pulse" 
               className="h-8" 
             />
+            <p className="text-coral-red font-bold text-xl">IVF Pulse</p>
           </Link>
 
           <nav className="hidden lg:flex items-center space-x-8">
